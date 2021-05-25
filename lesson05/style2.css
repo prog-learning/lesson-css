@@ -1,0 +1,53 @@
+/* ==============================
+    05. Box Model と余白を学ぶ2
+================================ */
+
+/* button を非表示 */
+button {
+  display: none;
+}
+
+/* ここで一括指定 */
+div,
+span {
+  /* display: inline; */
+  display: block;
+  /* display: inline-block; */
+}
+
+/*
+  余白 margin, padding
+  */
+.box {
+  margin: 16px; /* 外側の余白...背景色を含まない */
+  padding: 8px; /* 内側の余白...背景色を含む */
+  /* inline, block, inline-blockの3つの状態で確認 */
+}
+
+/*
+  枠線 border（margin と padding の間）
+  */
+.box {
+  /* border: 4px solid lime; */
+  /* 太さ, 線の種類, 色 の順番 */
+
+  /* 角を丸くする方法も一緒に覚えよう */
+  /* border-radius: 12px; */
+}
+
+/*
+  block のとき padding は width に含まれるのか
+*/
+.box {
+  /* width: 60px; */
+  /* padding: 10px; */
+  /* 含まれていることを確認 */
+}
+
+/*
+  box-sizing: border-box; で解決
+*/
+.box {
+  /* box-sizing: border-box; */
+  /* ↑padding や border を width に含めるが, padding が width を超えた場合は... */
+}

@@ -1,0 +1,45 @@
+/* ==============================
+    05. Box Model と余白を学ぶ2
+================================ */
+
+/*
+  それぞれ色をつけて挙動を観察
+ */
+div, /* 実はこんな感じで, Selector はまとめて書ける */
+span,
+button {
+  width: 60px;
+  height: 60px;
+
+  border-style: none; /* ※ボタンにはデフォルトで枠線があるので,外しておく */
+}
+/* 色はそれぞれ分ける */
+div {
+  background-color: aquamarine;
+}
+span {
+  background-color: tomato;
+}
+button {
+  background-color: darkorange;
+}
+
+/*
+  3種のdisplay
+ */
+div,
+span,
+button {
+  /* コメントアウトを解除してどんな挙動になるか確認しよう */
+  /* display: inline; */
+  /* display: block; */
+  /* display: inline-block; */
+}
+
+/* 残念ながらbuttonは特殊な要素であり,
+  inline-block 以外に変更することができないこともわかります
+  続編では,buttonタグを除いて, 学んでいきましょう.
+*/
+
+/* index.html の head 内にある link タグのコメントアウトを解除して,
+style2.css を読み込ませることで続きを学ぼう */
