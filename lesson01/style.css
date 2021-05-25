@@ -1,0 +1,39 @@
+/* ==============================
+    01. Selector（セレクター）
+================================ */
+
+/*
+  SelectorとCSSの構文
+ */
+h2 {
+  color: red; /* 文字の色を赤に変える命令 */
+}
+/* どこの？ なにを？ どのようにする？ を命令してあげるのがCSS */
+
+/*
+ 他のSelectorの種類
+ */
+
+/* idを指定する場合（#をつける） */
+#tadano {
+  color: skyblue;
+}
+
+/* classを指定する場合（.をつける） */
+.tadano {
+  color: salmon;
+}
+
+/* 
+  条件付きのSelector
+ */
+
+/* マウスが乗ったとき */
+#tadano:hover {
+  color: orange;
+}
+
+/* クリックしたとき */
+.tadano:active {
+  color: green;
+}
