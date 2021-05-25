@@ -1,0 +1,59 @@
+/* ==============================
+    06. 影をつける
+================================ */
+
+body {
+  padding: 0 40px;
+  /* 確認しやすいように body に余白つけとく */
+}
+
+/* サンプルとなるカードの装飾 */
+.card {
+  display: inline-block;
+  width: 160px;
+  height: 240px;
+  margin: 40px;
+  background-color: lightgreen;
+  border-radius: 4px;
+}
+
+/* 
+  Box に影をつける 
+  */
+.one {
+  box-shadow: 24px 12px 8px 4px #444;
+  /* 右, 下, ぼかし度合い, 広がり距離, 色 の順 */
+  /* それぞれいじって見よう */
+
+  /* ぼかし度合い と 広がり距離 は省略可 */
+  /* box-shadow: 12px 12px #444; */
+
+  /* 左に影を作る場合 */
+  /* box-shadow: -24px 12px 4px #444; */
+}
+
+/* 
+  内側に影をつける
+  */
+.two {
+  box-shadow: inset 12px 12px 8px #444;
+}
+
+/* 
+  画像の形に合わせた影をつける
+ */
+.sanji {
+  filter: drop-shadow(12px 12px 4px #444);
+
+  width: 240px;
+  margin: 40px;
+}
+
+/*
+    テキストに影をつける
+ */
+.title {
+  text-shadow: 4px 4px 2px darkcyan;
+
+  font-size: 60px;
+}

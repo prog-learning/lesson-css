@@ -1,12 +1,17 @@
 const lessonTitles = [
-  'selector',
-  'color',
-  'font',
-  'size',
-  'box-model',
-  '影',
-  'flexbox',
-  'animation',
+  'Selector',
+  'Color',
+  'Font',
+  'Size',
+  'Box Model',
+  'Shadow',
+  'Flexbox',
+  'Position',
+  'Grid Layout',
+  'Pseudo Element',
+  'Transform',
+  'Transition',
+  'Animation',
 ];
 
 const createPath = () => {

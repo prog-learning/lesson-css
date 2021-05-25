@@ -22,6 +22,22 @@ span {
   margin: 16px; /* 外側の余白...背景色を含まない */
   padding: 8px; /* 内側の余白...背景色を含む */
   /* inline, block, inline-blockの3つの状態で確認 */
+
+  /* 余白の位置を指定 */
+  /* margin-top: 1px; */
+  /* margin-right: 2px; */
+  /* margin-bottom: 3px; */
+  /* margin-left: 4px; */
+
+  /*
+    省略記法
+  */
+
+  /* margin: 1px 2px 3px 4px; */
+  /* 上と同じになる. top から時計回り */
+
+  /* margin: 10px 20px; */
+  /* 上下10px 左右20px の余白 */
 }
 
 /*
@@ -30,6 +46,15 @@ span {
 .box {
   /* border: 4px solid lime; */
   /* 太さ, 線の種類, 色 の順番 */
+
+  /* 線の種類 */
+  /* border-style: solid; */
+  /* border-style: groove; */
+  /* border-style: ridge; */
+  /* border-style: inset; */
+  /* border-style: outset; */
+  /* border-style: dashed; */
+  /* border-style: dotted; */
 
   /* 角を丸くする方法も一緒に覚えよう */
   /* border-radius: 12px; */

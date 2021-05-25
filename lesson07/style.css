@@ -1,0 +1,75 @@
+/* ==============================
+07. Flexbox
+================================ */
+
+.child {
+  width: 160px;
+  height: 160px;
+  background-color: lightskyblue;
+  border: 2px dashed #333;
+  border-radius: 4px;
+  /* margin: 16px; */
+}
+
+.parent {
+  /* flex状態にする（子どもをflexbox関連の命令を使って操作できる状態） */
+  display: flex;
+
+  /* 
+    水平（横）方向の揃え
+   */
+
+  /* justify-content: flex-start; */
+  justify-content: flex-end;
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+
+  /* 
+    鉛直（縦）方向の揃え
+    */
+
+  align-items: flex-start;
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: space-around; */
+  /* align-items: space-between; */
+  /* align-items: space-evenly; */
+
+  /* 
+    はみ出る場合の改行
+   */
+
+  flex-wrap: nowrap;
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  /* 改行された場合の鉛直（縦）方向の寄せ具合 */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  align-content: center;
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+  /* align-content: space-evenly; */
+
+  /* 
+    並べる向き
+ */
+
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  /* ※columnにすると横と縦がひっくり返る */
+
+  /* 装飾用 */
+  width: 600px;
+  height: 600px;
+  background-color: lightcoral;
+  border-radius: 4px;
+}
+body {
+  padding: 0 40px;
+}
